@@ -1,0 +1,52 @@
+@import "_variaveis.scss";
+@import "_reset.scss";
+
+body{
+    background-color: $preto;
+}
+
+.banner{
+   width: fit-content; 
+   height: 100%;
+   box-shadow: 0px 0px 40px #05312A;
+   
+}
+
+.BannerWrapper{
+    border: 2px solid red;
+    height: fit-content;
+    width: fit-content;
+}
+
+.BannerWrapperMQLaptopL{
+    border: 2px solid red;
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    z-index: -1;
+    top: -198.51px;
+    visibility: hidden;
+
+    
+    // -198.7px
+}
+
+#BannerWrapperMQLaptopL_direita{
+    top: -($bannerWrapSize)*2;
+}
+
+@media only screen and (max-width: 768px) {
+    .banner{
+        width: 100%;
+    
+        
+    }
+    
+}
+
+@media only screen and (min-width:1024px){
+    .BannerWrapper{
+        border: 2px solid rgb(255,255,255);
+        align-self: center;
+    }
+}

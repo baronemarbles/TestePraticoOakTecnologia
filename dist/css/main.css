@@ -12,6 +12,9 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   height: 100%;
+}
+
+#banner_principal {
   box-shadow: 0px 0px 40px #05312A;
 }
 
@@ -29,14 +32,20 @@ body {
   height: fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  align-self: center;
   position: relative;
   z-index: -1;
-  top: -198.51px;
   visibility: hidden;
 }
 
+#BannerWrapperMQLaptopL_esquerda {
+  display: inline;
+  position: relative;
+}
+
 #BannerWrapperMQLaptopL_direita {
-  top: -397.02px;
+  display: inline;
+  position: relative;
 }
 
 @media only screen and (max-width: 768px) {
@@ -44,9 +53,18 @@ body {
     width: 100%;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1132px) {
+  .banner {
+    box-shadow: none;
+  }
   .BannerWrapper {
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid white;
     align-self: center;
+  }
+  .BannerWrapperMQLaptopL {
+    visibility: visible;
+    height: -moz-fit-content;
+    height: fit-content;
+    border: 2px solid blue;
   }
 }/*# sourceMappingURL=main.css.map */

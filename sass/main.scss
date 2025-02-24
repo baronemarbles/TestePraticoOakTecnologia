@@ -16,7 +16,7 @@ body{
 }
 
 .BannerWrapper{
-    border: 2px solid red;
+    // border: 2px solid red;
     height: fit-content;
     width: fit-content;
 }
@@ -35,20 +35,23 @@ body{
     // -198.7px
 }
 
-#BannerWrapperMQLaptopL_esquerda{
-    display: inline;
+#BannerWrapperMQLaptopL_esquerda,#BannerWrapperMQLaptopL_direita{
+    display: block;
     position: relative;
-    
-    
 }
 
-#BannerWrapperMQLaptopL_direita{
-    display: inline;
-    position: relative;
-    // bottom:56.9svh;
-    // bottom:20.9svh;
+// #BannerWrapperMQLaptopL_esquerda{
     
-}
+    
+    
+// }
+
+// #BannerWrapperMQLaptopL_direita{
+
+//     // bottom:56.9svh;
+//     // bottom:20.9svh;
+    
+// }
 
 @media only screen and (max-width: 768px) {
     .banner{
@@ -60,28 +63,51 @@ body{
 }
 
 @media only screen and (min-width:1132px){
+
+    #header{
+        height: 193px;
+        border-bottom: 2px solid white;
+    }
+
     .banner{
         box-shadow: none;
     }
     
     .BannerWrapper{
-        border: 2px solid white;
+        // border: 2px solid white;
         align-self: center;
+        justify-self: center;
         
     }
 
+    #BannerWrapperMQLaptopL_esquerda,#BannerWrapperMQLaptopL_direita{
+        height: 100%;
+        width: fit-content;
+    }
+
     .BannerWrapperMQLaptopL{
-        visibility: visible;
+        display: flex;
         height: fit-content;
+        width: 100%;
+        overflow: hidden;
+        flex-direction: row;
+        height: 191px;
+        
+        justify-content: space-between;
+        bottom: 198px;
+        visibility: visible;
+        
         
         border: 2px solid blue;
 
         
         
-        // filter: blur(4px) saturate(0%);
+        filter: blur(4px) saturate(0%);
 
         // background-image: linear-gradient(0deg,$preto,$verde);
     }
 
+    
+    
     
 }

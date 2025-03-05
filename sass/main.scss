@@ -59,8 +59,21 @@ body{
     
         
     }
+
+    #header{
+        // display: none;
+        border: 2px solid yellow;
+        height: fit-content;
+    }
     
 }
+
+// @media only screen and (min-width:768) and (max-width:1131px) {
+//     #header{
+//         // display: none;
+//         border: 2px solid yellow;
+//     }
+// }
 
 @media only screen and (min-width:1132px){
 

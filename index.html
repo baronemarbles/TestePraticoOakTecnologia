@@ -24,24 +24,52 @@
 
         <br>
         <div>
-            <form action="*" method="post">
-                <fieldset>
-                    <h1>Registro</h1>
-                    <div>
-                        <input type="text" name="productName" pattern="[a-zA-Z]" required>
+
+            <h1>Registro</h1>
+
+            <form class="form" action="*" method="post">
+                <fieldset class="fieldset">
+                    
+                    <div class="div_wrapInputs">
+                        <label class="labels_input" for="input_productName">Nome do Produto</label>
+                        <div>
+                            <input type="text" class="inputs" id="input_productName" name="productName" pattern="[a-zA-Z]" required>
+                        </div>
                     </div>
                     
-                    <div>
-                        <input type="text" name="descricao" required>
+
+                    <div class="div_wrapInputs">
+                        <label class="labels_input" for="descricao">Descrição do produto</label>
+                        <div>
+                            <input type="text" class="inputs" id="input_descricao" name="descricao" required>
+                        </div>
                     </div>
 
-                    <div>
-                        <input type="text" name="valorProduto" required>
+                    
+                    <div class="div_wrapInputs">
+                        <label class="labels_input" for="valorProduto">Valor do Produto</label>
+                        <div>
+                            <input type="text" class="inputs" id="input_valorProduto" name="valorProduto" required>
+                        </div>
                     </div>
 
-                    <div>
-                        <input type="" name="disponibilidade" required>
+                    
+                    <div class="div_wrapInputs" id="div_wrapInputs-dispobilidade">
+                        <label class="labels" id="label-disponibilidade" for="div_disponibilidade">Disponibilidade</label>
+                        <div id="div_disponibilidade">
+                            <div class="disponibilidade-radio-buttons">
+                                <input type="radio" id="i_sim" name="disponibilidade" value="1" required>
+                                <label for="i_sim">Sim</label><br>
+                            </div>
+
+                            <div class="disponibilidade-radio-buttons">
+                                <input type="radio" id="i_nao" name="disponibilidade" value="0" required>
+                                <label for="i_nao">Não</label><br>
+                            </div>
+                        </div>
                     </div>
+
+                    <div id="div_submit"><input type="submit" id="submit_button" value="Cadastrar"></div>
 
                 </fieldset>
             </form>

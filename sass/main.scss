@@ -40,6 +40,25 @@ body{
     position: relative;
 }
 
+#header{
+    border: 2px solid red;
+}
+
+
+.inputs{
+    background-color: $preto;
+    border-style: none;
+    border-bottom: 2px solid rgb(63, 63, 63);
+}
+
+#labels_input{
+    color: white;
+}
+
+.fieldset{
+    background-color: aliceblue;
+}
+
 // #BannerWrapperMQLaptopL_esquerda{
     
     
@@ -62,18 +81,39 @@ body{
 
     #header{
         // display: none;
-        border: 2px solid yellow;
+        width: 100%;
         height: fit-content;
+        overflow: hidden;
     }
+
+    .BannerWrapperMQLaptopL,#BannerWrapperMQLaptopL_esquerda,#BannerWrapperMQLaptopL_direita{
+        display: none;
+    }
+
+    
+
+    
     
 }
+/*Tablet till bannerWidth*/
+@media only screen and (min-width:769px) and (max-width:1131px) {
+    .banner{
+        width: 100%;
+    
+        
+    }
 
-// @media only screen and (min-width:768) and (max-width:1131px) {
-//     #header{
-//         // display: none;
-//         border: 2px solid yellow;
-//     }
-// }
+    #header{
+        // display: none;
+        
+        height: fit-content;
+        overflow: hidden;
+    }
+
+    .BannerWrapperMQLaptopL,#BannerWrapperMQLaptopL_esquerda,#BannerWrapperMQLaptopL_direita{
+        display: none;
+    }
+}
 
 @media only screen and (min-width:1132px){
 
@@ -118,6 +158,48 @@ body{
         filter: blur(4px) saturate(0%);
 
         // background-image: linear-gradient(0deg,$preto,$verde);
+    }
+
+    .form{
+        border: 2px solid yellow;
+        height: 60svh;
+        width: 30%;
+    }
+    
+    .fieldset{
+        height: inherit;
+        width: 100%;
+        padding: 15px 30px;
+    }
+
+    .inputs{
+        width: 100%;
+        font-size:medium;
+        color: white;
+    }
+
+    .div_wrapInputs{
+        margin-bottom: 10px;
+    }
+
+    #div_wrapInputs-dispobilidade{
+        background-color: gainsboro;
+        border-radius: 12px;
+    }
+
+    #label-disponibilidade{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .disponibilidade-radio-buttons{
+        display: inline;
+    }
+
+    #div_disponibilidade{
+        display: flex;
+        justify-content: space-evenly;
     }
 
     
